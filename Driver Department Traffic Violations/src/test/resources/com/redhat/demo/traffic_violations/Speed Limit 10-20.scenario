@@ -28,20 +28,27 @@
     <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
       <name>trafficViolation</name>
     </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>38</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
+    </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>fineAmount</fieldName>
           <expected>100.0</expected>
+          <successResult>true</successResult>
+          <explanation>[violation] field [fineAmount] was [100.0].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>points</fieldName>
           <expected>1</expected>
+          <successResult>true</successResult>
+          <explanation>[violation] field [points] was [1].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>violation</name>
@@ -49,9 +56,13 @@
     </expect-fact>
     <expect-rule>
       <ruleName>Row 1 SpeedViolationRule</ruleName>
+      <explanation>Rule [Row 1 SpeedViolationRule] was activated 1 times.</explanation>
       <expectedFire>true</expectedFire>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
     </expect-rule>
   </fixtures>
+  <lastRunResult>2018-03-15 21:07:01.427 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.redhat.demo.traffic_violations</packageName>
