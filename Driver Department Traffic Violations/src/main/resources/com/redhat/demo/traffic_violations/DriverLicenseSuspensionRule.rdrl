@@ -1,0 +1,9 @@
+package com.redhat.demo.traffic_violations;
+
+import java.lang.Number;
+
+rule "DriverLicenseSuspensionRule"
+	dialect "mvel"
+	when
+	then
+end
