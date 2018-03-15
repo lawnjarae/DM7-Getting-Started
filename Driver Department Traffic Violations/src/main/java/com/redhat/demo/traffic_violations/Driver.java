@@ -8,6 +8,7 @@ public class Driver implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
+
 	@org.kie.api.definition.type.Label(value = "Name")
 	private java.lang.String name;
 	@org.kie.api.definition.type.Label(value = "Age")
@@ -60,12 +61,12 @@ public class Driver implements java.io.Serializable {
 		this.city = city;
 	}
 
-	public java.util.List<com.redhat.demo.driver_dept_traffic_violations.Violation> getViolations() {
+	public java.util.List<com.redhat.demo.traffic_violations.Violation> getViolations() {
 		return this.violations;
 	}
 
 	public void setViolations(
-			java.util.List<com.redhat.demo.driver_dept_traffic_violations.Violation> violations) {
+			java.util.List<com.redhat.demo.traffic_violations.Violation> violations) {
 		this.violations = violations;
 	}
 
@@ -98,7 +99,7 @@ public class Driver implements java.io.Serializable {
 			java.lang.Integer age,
 			java.lang.String state,
 			java.lang.String city,
-			java.util.List<com.redhat.demo.driver_dept_traffic_violations.Violation> violations,
+			java.util.List<com.redhat.demo.traffic_violations.Violation> violations,
 			java.lang.Double fineAmount, java.lang.Integer totalPoints,
 			java.lang.String reason) {
 		this.name = name;
