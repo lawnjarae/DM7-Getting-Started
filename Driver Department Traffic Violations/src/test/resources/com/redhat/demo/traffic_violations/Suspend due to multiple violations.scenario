@@ -1,0 +1,13 @@
+<scenario>
+  <name>Suspend due to multiple violations</name>
+  <maxRuleFirings>100000</maxRuleFirings>
+  <globals/>
+  <fixtures/>
+  <rules/>
+  <inclusive>false</inclusive>
+  <packageName>com.redhat.demo.traffic_violations</packageName>
+  <imports>
+    <imports/>
+  </imports>
+  <ksessions/>
+</scenario>
